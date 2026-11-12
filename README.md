@@ -1,101 +1,87 @@
-# DineTap
+# 🍽️ DineTap
 
-**Scan. Order. Dine.**
+<p align="center">
+  <strong>Scan. Order. Dine.</strong><br/>
+  A smarter QR-based ordering experience for modern restaurants.
+</p>
 
-DineTap is a QR-based restaurant ordering and management platform. Guests scan a table QR code to explore a digital menu and place orders, while restaurant teams manage menus, tables, orders, and kitchen operations from one workspace.
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Status-In_Development-orange" alt="In development" />
+</p>
 
-> **Status:** Initial scaffold. Features in the roadmap are planned until implemented and tested.
+DineTap makes dine-in simpler. Guests scan a table QR code to explore the menu and build an order, while restaurant teams get a clearer way to manage service from one workspace.
 
-## Product vision
+## ✨ What’s inside
 
-Make dine-in ordering simpler for guests and restaurant operations clearer for staff.
+- 📱 **QR-first menu** — a mobile-friendly digital menu for each table.
+- 🛒 **Easy ordering** — browse categories, add dishes, and manage cart quantities.
+- 🧑‍🍳 **Restaurant operations** — a dashboard concept for orders, tables, and kitchen workflows.
+- 📊 **Business insights** — a foundation for sales and menu analytics.
+- 💳 **Payments & split bills** — planned checkout capabilities.
 
-## Planned capabilities
+## 🖥️ Demo pages
 
-### Guest experience
-- Table-specific QR menu access
-- Browse menu categories, item details, variants, and add-ons
-- Shopping cart and order placement
-- Live order progress
-- Online payment integration
-- Split-bill support
+| Page | Route |
+| --- | --- |
+| Product landing page | `/` |
+| Interactive customer menu | `/menu/demo` |
+| Restaurant dashboard preview | `/dashboard` |
 
-### Restaurant workspace
-- Restaurant onboarding and team roles
-- Menu and availability management
-- Table management and QR generation
-- Order queue and order status controls
-- Sales and menu analytics
+> **Current status:** The landing page, interactive sample menu/cart, and dashboard preview are in place. Demo data is local/static; authentication, database persistence, live order updates, and payment processing are not implemented yet.
 
-### Kitchen display
-- Incoming order queue
-- Preparation status updates
-- Ready-for-pickup workflow
+## 🧰 Tech stack
 
-## Technology
+**Next.js · React · TypeScript · Tailwind CSS · Lucide Icons**
 
-- Next.js App Router, React, TypeScript
-- Tailwind CSS
-- PostgreSQL and Prisma (planned)
-- Auth.js (planned)
-- Socket.IO (planned)
-- Razorpay integration (planned; India-first)
-- Vitest and Playwright (planned)
+Planned next: PostgreSQL + Prisma, authentication, real-time order updates, and Razorpay integration.
 
-## Current demo routes
+## 🚀 Run locally
 
-- `/` — Product landing page
-- `/menu/demo` — Interactive sample QR menu with category filters, cart quantity controls, and demo checkout confirmation
-- `/dashboard` — Restaurant operations dashboard preview with sample metrics and order queue
-
-The menu and dashboard currently use sample/local data. Authentication, database persistence, live order updates, and payment processing are not implemented yet.
-
-## Local development
-
-Requirements: Node.js 24 LTS (or a compatible supported Node.js release) and npm.
+**Requirements:** Node.js and npm.
 
 ```bash
+git clone https://github.com/samihan45/Quick-Dine.git
+cd Quick-Dine
 npm install
-cp .env.example .env.local
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Project structure
+## 📁 Project structure
 
-```
+```text
 src/
-  app/          # App Router routes and layouts
-  components/   # Shared UI components
-  lib/          # Utilities and shared configuration
-  modules/      # Business-domain modules
-  store/        # Client state
-  types/        # Shared TypeScript types
- prisma/        # Database schema and seed data (planned)
-docs/           # Architecture and product documentation
+├── app/          # Pages and routes
+├── components/   # Reusable UI
+├── lib/          # Shared utilities
+├── modules/      # Business features
+├── store/        # Client state
+└── types/        # TypeScript types
+docs/             # Project documentation
 ```
 
-## Engineering principles
+## 🗺️ Roadmap
 
-- Enforce restaurant/tenant ownership on the server.
-- Validate all incoming data.
-- Treat verified payment webhooks as the source of truth for payment state.
-- Make order and payment operations idempotent.
-- Preserve item names and prices as order-time snapshots.
-- Never commit secrets or real customer data.
+- [x] Landing page and visual foundation
+- [x] Demo menu and cart interactions
+- [x] Restaurant dashboard preview
+- [ ] PostgreSQL database and Prisma
+- [ ] Authentication and restaurant onboarding
+- [ ] Menu, table, and QR management
+- [ ] Persistent orders and kitchen display
+- [ ] Real-time updates and payment integration
+- [ ] Testing, CI/CD, and deployment
 
-## Roadmap
+## 🤝 Contributing
 
-1. App scaffold and design system
-2. Database schema and authentication
-3. Restaurant onboarding, menus, and tables
-4. QR-based guest ordering
-5. Orders and kitchen display
-6. Real-time updates
-7. Payments and split bills
-8. Analytics, tests, CI, and deployment
+Ideas and improvements are welcome. Open an issue to discuss a change, or submit a pull request with a clear description.
 
-## License
+---
 
-MIT. A license file will be added before the first public release.
+<p align="center">
+  Built with ❤️ for better dining experiences.
+</p>
