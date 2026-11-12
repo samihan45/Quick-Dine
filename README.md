@@ -42,6 +42,14 @@ Make dine-in ordering simpler for guests and restaurant operations clearer for s
 - Razorpay integration (planned; India-first)
 - Vitest and Playwright (planned)
 
+## Current demo routes
+
+- `/` — Product landing page
+- `/menu/demo` — Interactive sample QR menu with category filters, cart quantity controls, and demo checkout confirmation
+- `/dashboard` — Restaurant operations dashboard preview with sample metrics and order queue
+
+The menu and dashboard currently use sample/local data. Authentication, database persistence, live order updates, and payment processing are not implemented yet.
+
 ## Local development
 
 Requirements: Node.js 24 LTS (or a compatible supported Node.js release) and npm.
