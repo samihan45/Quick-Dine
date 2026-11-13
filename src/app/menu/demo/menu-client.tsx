@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowLeft, Check, ChefHat, Clock3, Minus, Plus, ShoppingBag, Utensils, X } from "lucide-react";
+import { ArrowLeft, Check, ChefHat, Clock3, Minus, Plus, ShoppingBag, X } from "lucide-react";
 
 type MenuItem = {
   id: number;
