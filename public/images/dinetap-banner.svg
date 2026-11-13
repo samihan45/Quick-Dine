@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+<title id="title">DineTap — Scan. Order. Dine.</title>
+<desc id="desc">A warm orange restaurant technology banner with a QR menu phone mockup and order dashboard.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#29201c"/></linearGradient>
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9a45"/><stop offset="1" stop-color="#f05b24"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9a45" stop-opacity=".28"/><stop offset="1" stop-color="#f05b24" stop-opacity="0"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity=".32"/></filter>
+</defs>
+<rect width="1280" height="440" rx="28" fill="url(#bg)"/>
+<circle cx="1030" cy="185" r="260" fill="url(#glow)"/>
+<circle cx="1180" cy="20" r="150" fill="#f97316" opacity=".08"/>
+<g font-family="Inter,Arial,sans-serif">
+  <rect x="76" y="72" width="52" height="52" rx="16" fill="url(#orange)"/>
+  <path d="M91 88h22v22H91zM96 93h12v12H96z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M101 83v7M86 99h7M111 113v7M116 99h7" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="146" y="108" font-size="27" font-weight="800" fill="#fff">DineTap</text>
+  <text x="76" y="207" font-size="62" font-weight="800" letter-spacing="-2" fill="#fff">Scan. Order.</text>
+  <text x="76" y="277" font-size="62" font-weight="800" letter-spacing="-2" fill="#ff914d">Dine.</text>
+  <text x="80" y="326" font-size="20" fill="#d6d0cb">A smarter QR-powered dining experience.</text>
+  <rect x="78" y="357" width="190" height="42" rx="21" fill="#f97316"/>
+  <text x="173" y="384" font-size="15" font-weight="700" text-anchor="middle" fill="#fff">RESTAURANT TECH</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="742" y="50" width="220" height="350" rx="30" fill="#0d0d0d" stroke="#55504c" stroke-width="2"/>
+  <rect x="753" y="63" width="198" height="324" rx="22" fill="#fffaf5"/>
+  <rect x="817" y="71" width="70" height="8" rx="4" fill="#292524"/>
+  <text x="772" y="111" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#292524">GOOD EVENING 👋</text>
+  <text x="772" y="137" font-family="Arial,sans-serif" font-size="21" font-weight="800" fill="#1c1917">Today's menu</text>
+  <rect x="772" y="151" width="160" height="82" rx="13" fill="#ffeadb"/>
+  <circle cx="814" cy="192" r="27" fill="#f4a261"/><circle cx="814" cy="192" r="19" fill="#e76f51"/><circle cx="807" cy="185" r="3" fill="#fff2cc"/><circle cx="821" cy="198" r="3" fill="#fff2cc"/>
+  <text x="851" y="184" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#292524">Paneer Bowl</text>
+  <text x="851" y="204" font-family="Arial,sans-serif" font-size="11" fill="#78716c">Fresh &amp; delicious</text>
+  <text x="851" y="222" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ea580c">₹180</text>
+  <rect x="772" y="245" width="160" height="61" rx="12" fill="#fff" stroke="#eee5dd"/>
+  <circle cx="800" cy="275" r="19" fill="#e9c46a"/><circle cx="800" cy="275" r="12" fill="#2a9d8f"/>
+  <text x="828" y="270" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#292524">Masala Dosa</text>
+  <text x="828" y="288" font-family="Arial,sans-serif" font-size="11" fill="#ea580c">₹120</text>
+  <rect x="772" y="319" width="160" height="43" rx="12" fill="#f97316"/>
+  <text x="852" y="346" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">View your cart · 2</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="984" y="106" width="230" height="232" rx="18" fill="#fff" />
+  <rect x="984" y="106" width="230" height="43" rx="18" fill="#292524"/>
+  <path d="M984 131h230v18H984z" fill="#292524"/>
+  <circle cx="1005" cy="127" r="5" fill="#fb923c"/><text x="1020" y="132" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">LIVE ORDERS</text>
+  <text x="1004" y="178" font-family="Arial,sans-serif" font-size="11" fill="#78716c">TABLE 08</text>
+  <text x="1004" y="200" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#292524">Order #DT024</text>
+  <rect x="1004" y="214" width="190" height="1" fill="#eee"/>
+  <text x="1004" y="240" font-family="Arial,sans-serif" font-size="12" fill="#44403c">2 × Paneer Bowl</text>
+  <text x="1004" y="261" font-family="Arial,sans-serif" font-size="12" fill="#44403c">1 × Masala Dosa</text>
+  <rect x="1004" y="279" width="105" height="27" rx="13" fill="#dcfce7"/>
+  <circle cx="1018" cy="292" r="4" fill="#16a34a"/>
+  <text x="1028" y="296" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#166534">PREPARING</text>
+</g>
+<g opacity=".75"><circle cx="706" cy="95" r="5" fill="#fb923c"/><circle cx="1194" cy="380" r="7" fill="#fb923c"/><circle cx="700" cy="350" r="3" fill="#fff"/></g>
+</svg>
