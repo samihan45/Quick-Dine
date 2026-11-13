@@ -1,4 +1,8 @@
-# 🍽️ DineTap
+<p align="center">
+  <img src="public/images/dinetap-banner.svg" alt="DineTap — Scan. Order. Dine." width="100%" />
+</p>
+
+<h1 align="center">🍽️ DineTap</h1>
 
 <p align="center">
   <strong>Scan. Order. Dine.</strong><br/>
@@ -62,6 +66,7 @@ src/
 ├── store/        # Client state
 └── types/        # TypeScript types
 docs/             # Project documentation
+public/images/    # README visuals
 ```
 
 ## 🗺️ Roadmap
