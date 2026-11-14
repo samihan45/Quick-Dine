@@ -59,7 +59,7 @@ export default function Home() {
           </span>
           <span className="text-2xl font-black tracking-tight">Dine<span className="text-orange-500">Tap</span></span>
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-stone-600 md:flex">
+        <nav aria-label="Primary navigation" className="hidden items-center gap-8 text-sm font-semibold text-stone-600 md:flex">
           <a className="transition hover:text-orange-600" href="#features">Features</a>
           <a className="transition hover:text-orange-600" href="#how-it-works">How it works</a>
           <a className="transition hover:text-orange-600" href="#about">About</a>
@@ -68,6 +68,12 @@ export default function Home() {
           Explore DineTap <ArrowRight className="ml-2 inline" size={16} />
         </a>
       </header>
+
+      <nav aria-label="Mobile primary navigation" className="mx-auto flex max-w-7xl items-center gap-6 overflow-x-auto px-6 pb-2 text-sm font-semibold text-stone-600 md:hidden lg:px-10">
+        <a className="whitespace-nowrap transition hover:text-orange-600" href="#features">Features</a>
+        <a className="whitespace-nowrap transition hover:text-orange-600" href="#how-it-works">How it works</a>
+        <a className="whitespace-nowrap transition hover:text-orange-600" href="#about">About</a>
+      </nav>
 
       <section className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-12 lg:grid-cols-[1.02fr_.98fr] lg:px-10 lg:pb-28 lg:pt-20">
         <div className="absolute -left-44 top-10 -z-10 h-96 w-96 rounded-full bg-orange-100/70 blur-3xl" />
