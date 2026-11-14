@@ -66,7 +66,7 @@ export default function MenuClient() {
         </section>
         <div className="sticky top-[73px] z-10 -mx-5 overflow-x-auto bg-[#fffaf6]/95 px-5 py-3 backdrop-blur">
           <div className="flex w-max gap-2">
-            {categories.map((item) => <button key={item} onClick={() => setCategory(item)} className={`rounded-full px-5 py-2.5 text-sm font-bold transition ${category === item ? "bg-orange-500 text-white shadow-md shadow-orange-200" : "border border-stone-200 bg-white text-stone-600 hover:border-orange-300"}`}>{item}</button>)}
+            {categories.map((item) => <button key={item} type="button" aria-pressed={category === item} onClick={() => setCategory(item)} className={`rounded-full px-5 py-2.5 text-sm font-bold transition ${category === item ? "bg-orange-500 text-white shadow-md shadow-orange-200" : "border border-stone-200 bg-white text-stone-600 hover:border-orange-300"}`}>{item}</button>)}
           </div>
         </div>
         <section className="mt-5">
