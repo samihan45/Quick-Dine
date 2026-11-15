@@ -58,15 +58,17 @@ Open [http://localhost:3000](http://localhost:3000).
 ## 📁 Project structure
 
 ```text
-src/
-├── app/          # Pages and routes
-├── components/   # Reusable UI
-├── lib/          # Shared utilities
-├── modules/      # Business features
-├── store/        # Client state
-└── types/        # TypeScript types
-docs/             # Project documentation
-public/images/    # README visuals
+src/app/
+├── page.tsx                  # Product landing page
+├── layout.tsx                # Root layout and metadata
+├── globals.css               # Global styles
+├── dashboard/page.tsx        # Restaurant dashboard preview
+└── menu/demo/
+    ├── page.tsx              # Demo menu route and metadata
+    └── menu-client.tsx       # Interactive menu and cart
+
+docs/                         # Architecture notes
+public/images/                # README visuals
 ```
 
 ## 🗺️ Roadmap
