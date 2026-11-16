@@ -59,7 +59,7 @@ export default function Home() {
           </span>
           <span className="text-2xl font-black tracking-tight">Dine<span className="text-orange-500">Tap</span></span>
         </a>
-        <nav aria-label="Main navigation" className="hidden items-center gap-8 text-sm font-semibold text-stone-600 md:flex">
+        <nav className="hidden items-center gap-8 text-sm font-semibold text-stone-600 md:flex">
           <a className="transition hover:text-orange-600" href="#features">Features</a>
           <a className="transition hover:text-orange-600" href="#how-it-works">How it works</a>
           <a className="transition hover:text-orange-600" href="#about">About</a>
@@ -137,11 +137,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" aria-labelledby="features-heading" className="bg-white px-6 py-20 lg:px-10">
+      <section id="features" className="bg-white px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-black uppercase tracking-[.2em] text-orange-500">One connected experience</p>
-            <h2 id="features-heading" className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Everything at the table, <span className="text-orange-500">working together.</span></h2>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Everything at the table, <span className="text-orange-500">working together.</span></h2>
             <p className="mt-4 leading-7 text-stone-500">From the first scan to the final order update, DineTap brings the dining journey into one simple flow.</p>
           </div>
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -156,9 +156,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how-it-works" aria-labelledby="how-it-works-heading" className="px-6 py-20 lg:px-10">
+      <section id="how-it-works" className="px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-xl"><p className="text-xs font-black uppercase tracking-[.2em] text-orange-500">Simple by design</p><h2 id="how-it-works-heading" className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Three steps. A smoother service.</h2></div>
+          <div className="max-w-xl"><p className="text-xs font-black uppercase tracking-[.2em] text-orange-500">Simple by design</p><h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Three steps. A smoother service.</h2></div>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {steps.map(([number, title, description]) => <div key={number} className="rounded-3xl border border-stone-200 bg-white p-7"><p className="text-4xl font-black tracking-tighter text-orange-200">{number}</p><h3 className="mt-7 text-xl font-extrabold">{title}</h3><p className="mt-3 text-sm leading-6 text-stone-500">{description}</p></div>)}
           </div>
