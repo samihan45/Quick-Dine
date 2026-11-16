@@ -59,7 +59,7 @@ export default function Home() {
           </span>
           <span className="text-2xl font-black tracking-tight">Dine<span className="text-orange-500">Tap</span></span>
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-stone-600 md:flex">
+        <nav aria-label="Main navigation" className="hidden items-center gap-8 text-sm font-semibold text-stone-600 md:flex">
           <a className="transition hover:text-orange-600" href="#features">Features</a>
           <a className="transition hover:text-orange-600" href="#how-it-works">How it works</a>
           <a className="transition hover:text-orange-600" href="#about">About</a>
