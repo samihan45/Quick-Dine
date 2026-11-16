@@ -156,9 +156,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how-it-works" className="px-6 py-20 lg:px-10">
+      <section id="how-it-works" aria-labelledby="how-it-works-heading" className="px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-xl"><p className="text-xs font-black uppercase tracking-[.2em] text-orange-500">Simple by design</p><h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Three steps. A smoother service.</h2></div>
+          <div className="max-w-xl"><p className="text-xs font-black uppercase tracking-[.2em] text-orange-500">Simple by design</p><h2 id="how-it-works-heading" className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Three steps. A smoother service.</h2></div>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {steps.map(([number, title, description]) => <div key={number} className="rounded-3xl border border-stone-200 bg-white p-7"><p className="text-4xl font-black tracking-tighter text-orange-200">{number}</p><h3 className="mt-7 text-xl font-extrabold">{title}</h3><p className="mt-3 text-sm leading-6 text-stone-500">{description}</p></div>)}
           </div>
