@@ -137,11 +137,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" className="bg-white px-6 py-20 lg:px-10">
+      <section id="features" aria-labelledby="features-heading" className="bg-white px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-black uppercase tracking-[.2em] text-orange-500">One connected experience</p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Everything at the table, <span className="text-orange-500">working together.</span></h2>
+            <h2 id="features-heading" className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Everything at the table, <span className="text-orange-500">working together.</span></h2>
             <p className="mt-4 leading-7 text-stone-500">From the first scan to the final order update, DineTap brings the dining journey into one simple flow.</p>
           </div>
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
