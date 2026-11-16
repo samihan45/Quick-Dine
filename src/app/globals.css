@@ -22,4 +22,13 @@ body {
 
 button, a { -webkit-tap-highlight-color: transparent; }
 
+:focus-visible {
+  outline: 3px solid var(--brand-dark);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 ::selection { background: #ffe0cb; color: #54240c; }
