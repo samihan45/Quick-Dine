@@ -75,11 +75,11 @@ export default function MenuClient() {
             <p className="mt-2 text-sm text-stone-300">Explore our kitchen favourites and order right from your table.</p>
           </div>
         </section>
-        <div className="sticky top-[73px] z-10 -mx-5 overflow-x-auto bg-[#fffaf6]/95 px-5 py-3 backdrop-blur">
+        <nav aria-label="Menu categories" className="sticky top-[73px] z-10 -mx-5 overflow-x-auto bg-[#fffaf6]/95 px-5 py-3 backdrop-blur">
           <div className="flex w-max gap-2">
             {categories.map((item) => <button key={item} type="button" aria-pressed={category === item} onClick={() => setCategory(item)} className={`rounded-full px-5 py-2.5 text-sm font-bold transition ${category === item ? "bg-orange-500 text-white shadow-md shadow-orange-200" : "border border-stone-200 bg-white text-stone-600 hover:border-orange-300"}`}>{item}</button>)}
           </div>
-        </div>
+        </nav>
         <section className="mt-5">
           <div className="mb-4 flex items-end justify-between"><div><p className="text-xs font-bold uppercase tracking-widest text-orange-600">Our menu</p><h2 className="mt-1 text-2xl font-black">{category === "All" ? "Popular choices" : category}</h2></div><span className="text-xs text-stone-400">{visibleItems.length} items</span></div>
           <div className="space-y-3">
