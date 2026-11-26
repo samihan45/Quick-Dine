@@ -51,7 +51,8 @@ const steps = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden">
+    <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-5 focus:py-3 focus:font-bold focus:text-stone-900 focus:shadow-xl">Skip to content</a>
+    <main id="main-content" className="min-h-screen overflow-hidden">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
         <a href="#" className="flex items-center gap-2.5" aria-label="DineTap home">
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-orange-500 text-white shadow-lg shadow-orange-200">
