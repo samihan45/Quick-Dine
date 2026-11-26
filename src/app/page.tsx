@@ -70,13 +70,13 @@ export default function Home() {
         </a>
       </header>
 
-      <section className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-12 lg:grid-cols-[1.02fr_.98fr] lg:px-10 lg:pb-28 lg:pt-20">
+      <section aria-labelledby="hero-heading" className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-12 lg:grid-cols-[1.02fr_.98fr] lg:px-10 lg:pb-28 lg:pt-20">
         <div className="absolute -left-44 top-10 -z-10 h-96 w-96 rounded-full bg-orange-100/70 blur-3xl" />
         <div>
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white/80 px-4 py-2 text-xs font-bold uppercase tracking-[.16em] text-orange-700">
             <Zap size={14} /> A better way to dine in
           </div>
-          <h1 className="max-w-2xl text-5xl font-black leading-[1.06] tracking-[-.055em] text-stone-950 sm:text-6xl lg:text-7xl">
+          <h1 id="hero-heading" className="max-w-2xl text-5xl font-black leading-[1.06] tracking-[-.055em] text-stone-950 sm:text-6xl lg:text-7xl">
             Good food.
             <span className="block text-orange-500">One quick scan.</span>
             Zero hassle.
