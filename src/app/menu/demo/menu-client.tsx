@@ -98,7 +98,7 @@ export default function MenuClient() {
       {itemCount > 0 && <div className="fixed inset-x-0 bottom-0 z-30 border-t border-orange-100 bg-white/95 p-4 backdrop-blur">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4">
           <div aria-live="polite" aria-atomic="true"><p className="text-xs text-stone-500">{itemCount} item{itemCount > 1 ? "s" : ""} in your cart</p><p className="text-lg font-black">₹{total}</p></div>
-          <button onClick={() => setCartOpen(true)} className="rounded-full bg-stone-950 px-6 py-3.5 text-sm font-extrabold text-white transition hover:bg-orange-600"><ShoppingBag className="mr-2 inline" size={16}/> View cart <span className="ml-2 rounded-full bg-orange-500 px-2 py-1 text-xs">{itemCount}</span></button>
+          <button type="button" aria-haspopup="dialog" aria-expanded={cartOpen} onClick={() => setCartOpen(true)} className="rounded-full bg-stone-950 px-6 py-3.5 text-sm font-extrabold text-white transition hover:bg-orange-600"><ShoppingBag className="mr-2 inline" size={16}/> View cart <span className="ml-2 rounded-full bg-orange-500 px-2 py-1 text-xs">{itemCount}</span></button>
         </div>
       </div>}
 
