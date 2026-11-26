@@ -148,7 +148,7 @@ export default function Home() {
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {features.map(({icon: Icon, title, description}) => (
               <article key={title} className="group rounded-3xl border border-stone-100 bg-[#fffdfa] p-7 transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-900/5">
-                <span className="grid h-12 w-12 place-items-center rounded-2xl bg-orange-100 text-orange-600 transition group-hover:bg-orange-500 group-hover:text-white"><Icon size={22}/></span>
+                <span aria-hidden="true" className="grid h-12 w-12 place-items-center rounded-2xl bg-orange-100 text-orange-600 transition group-hover:bg-orange-500 group-hover:text-white"><Icon size={22}/></span>
                 <h3 className="mt-6 text-lg font-extrabold">{title}</h3>
                 <p className="mt-2 text-sm leading-6 text-stone-500">{description}</p>
               </article>
