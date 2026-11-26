@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ArrowLeft, Check, ChefHat, Clock3, Minus, Plus, ShoppingBag, X } from "lucide-react";
+import { ArrowLeft, Check, ChefHat, Clock3, Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 
 type MenuItem = {
   id: number;
@@ -27,6 +27,7 @@ const categories = ["All", "Starters", "Mains", "Desserts", "Drinks"];
 
 export default function MenuClient() {
   const [category, setCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
   const [cart, setCart] = useState<Record<number, number>>({});
   const [cartOpen, setCartOpen] = useState(false);
   const [orderPlaced, setOrderPlaced] = useState(false);
@@ -42,7 +43,7 @@ export default function MenuClient() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [cartOpen]);
 
-  const visibleItems = category === "All" ? menu : menu.filter((item) => item.category === category);
+  const visibleItems = menu.filter((item) => (category === "All" || item.category === category) && (item.name.toLowerCase().includes(searchQuery.toLowerCase()) || item.description.toLowerCase().includes(searchQuery.toLowerCase())));
   const cartItems = useMemo(() => menu.filter((item) => cart[item.id]).map((item) => ({ ...item, quantity: cart[item.id] })), [cart]);
   const itemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -75,6 +76,10 @@ export default function MenuClient() {
             <p className="mt-2 text-sm text-stone-300">Explore our kitchen favourites and order right from your table.</p>
           </div>
         </section>
+        <div className="relative mt-5">
+          <Search aria-hidden="true" size={18} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"/>
+          <input type="search" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Search dishes..." aria-label="Search menu dishes" className="w-full rounded-full border border-stone-200 bg-white py-3 pl-11 pr-4 text-sm outline-none transition placeholder:text-stone-400 focus:border-orange-400"/>
+        </div>
         <nav aria-label="Menu categories" className="sticky top-[73px] z-10 -mx-5 overflow-x-auto bg-[#fffaf6]/95 px-5 py-3 backdrop-blur">
           <div className="flex w-max gap-2">
             {categories.map((item) => <button key={item} type="button" aria-controls="menu-items" aria-pressed={category === item} onClick={() => setCategory(item)} className={`rounded-full px-5 py-2.5 text-sm font-bold transition ${category === item ? "bg-orange-500 text-white shadow-md shadow-orange-200" : "border border-stone-200 bg-white text-stone-600 hover:border-orange-300"}`}>{item}</button>)}
