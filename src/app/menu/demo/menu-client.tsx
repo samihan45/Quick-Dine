@@ -77,12 +77,12 @@ export default function MenuClient() {
         </section>
         <nav aria-label="Menu categories" className="sticky top-[73px] z-10 -mx-5 overflow-x-auto bg-[#fffaf6]/95 px-5 py-3 backdrop-blur">
           <div className="flex w-max gap-2">
-            {categories.map((item) => <button key={item} type="button" aria-pressed={category === item} onClick={() => setCategory(item)} className={`rounded-full px-5 py-2.5 text-sm font-bold transition ${category === item ? "bg-orange-500 text-white shadow-md shadow-orange-200" : "border border-stone-200 bg-white text-stone-600 hover:border-orange-300"}`}>{item}</button>)}
+            {categories.map((item) => <button key={item} type="button" aria-controls="menu-items" aria-pressed={category === item} onClick={() => setCategory(item)} className={`rounded-full px-5 py-2.5 text-sm font-bold transition ${category === item ? "bg-orange-500 text-white shadow-md shadow-orange-200" : "border border-stone-200 bg-white text-stone-600 hover:border-orange-300"}`}>{item}</button>)}
           </div>
         </nav>
         <section className="mt-5">
           <div className="mb-4 flex items-end justify-between"><div><p className="text-xs font-bold uppercase tracking-widest text-orange-600">Our menu</p><h2 className="mt-1 text-2xl font-black">{category === "All" ? "Popular choices" : category}</h2></div><span className="text-xs text-stone-400">{visibleItems.length} items</span></div>
-          <div className="space-y-3">
+          <div id="menu-items" className="space-y-3">
             {visibleItems.map((item) => <article key={item.id} className="flex gap-4 rounded-2xl border border-stone-100 bg-white p-3 shadow-sm">
               <div aria-hidden="true" className="grid h-24 w-24 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-orange-100 to-amber-50 text-4xl">{item.emoji}</div>
               <div className="flex min-w-0 flex-1 flex-col justify-between py-1">
