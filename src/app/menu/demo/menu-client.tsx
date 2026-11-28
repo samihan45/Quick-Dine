@@ -43,7 +43,11 @@ export default function MenuClient() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [cartOpen]);
 
-  const visibleItems = menu.filter((item) => (category === "All" || item.category === category) && (item.name.toLowerCase().includes(searchQuery.toLowerCase()) || item.description.toLowerCase().includes(searchQuery.toLowerCase())));
+  const normalizedSearch = searchQuery.trim().toLowerCase();
+  const visibleItems = useMemo(
+    () => menu.filter((item) => (category === "All" || item.category === category) && (item.name.toLowerCase().includes(normalizedSearch) || item.description.toLowerCase().includes(normalizedSearch))),
+    [category, normalizedSearch]
+  );
   const cartItems = useMemo(() => menu.filter((item) => cart[item.id]).map((item) => ({ ...item, quantity: cart[item.id] })), [cart]);
   const itemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
