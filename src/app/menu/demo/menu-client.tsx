@@ -78,7 +78,7 @@ export default function MenuClient() {
         </section>
         <div className="relative mt-5">
           <Search aria-hidden="true" size={18} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"/>
-          <input type="search" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Search dishes..." aria-label="Search menu dishes" className="w-full rounded-full border border-stone-200 bg-white py-3 pl-11 pr-4 text-sm outline-none transition placeholder:text-stone-400 focus:border-orange-400"/>
+          <input type="search" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Search dishes..." aria-label="Search menu dishes" className="w-full rounded-full border border-stone-200 bg-white py-3 pl-11 pr-11 text-sm outline-none transition placeholder:text-stone-400 focus:border-orange-400"/>{searchQuery && <button type="button" onClick={() => setSearchQuery("")} aria-label="Clear dish search" className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1.5 text-stone-400 hover:bg-orange-50 hover:text-orange-600"><X size={16}/></button>}
         </div>
         <nav aria-label="Menu categories" className="sticky top-[73px] z-10 -mx-5 overflow-x-auto bg-[#fffaf6]/95 px-5 py-3 backdrop-blur">
           <div className="flex w-max gap-2">
