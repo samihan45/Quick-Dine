@@ -86,7 +86,7 @@ export default function MenuClient() {
           </div>
         </nav>
         <section className="mt-5">
-          <div className="mb-4 flex items-end justify-between"><div><p className="text-xs font-bold uppercase tracking-widest text-orange-600">Our menu</p><h2 className="mt-1 text-2xl font-black">{category === "All" ? "Popular choices" : category}</h2></div><span className="text-xs text-stone-400">{visibleItems.length} items</span></div>
+          <div className="mb-4 flex items-end justify-between"><div><p className="text-xs font-bold uppercase tracking-widest text-orange-600">Our menu</p><h2 className="mt-1 text-2xl font-black">{category === "All" ? "Popular choices" : category}</h2></div><span role="status" aria-live="polite" className="text-xs text-stone-400">{visibleItems.length} {visibleItems.length === 1 ? "item" : "items"} found</span></div>
           <div id="menu-items" className="space-y-3">
             {visibleItems.length > 0 ? visibleItems.map((item) => <article key={item.id} className="flex gap-4 rounded-2xl border border-stone-100 bg-white p-3 shadow-sm">
               <div aria-hidden="true" className="grid h-24 w-24 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-orange-100 to-amber-50 text-4xl">{item.emoji}</div>
